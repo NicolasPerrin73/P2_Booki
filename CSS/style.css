@@ -1,0 +1,536 @@
+/* Prefixe box-sizing */
+body
+{
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+/* Mise en page géneral */
+
+body   
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+a
+{
+    text-decoration: none;              /*suppr le soulignement d'origine */
+    color: black;
+}
+
+a:visited
+{
+    color: black;                       /* lien visité en noir */
+}
+
+
+ /*Mise en page du Header desktop */
+
+header
+{
+    display: flex;                      /* defini l'axe principale en ligne pour <figure> et <nav> */
+    align-items: center;                /* centrage sur l'axe secondaire */
+    justify-content: space-between;     /* repartition dans le header sur l'axe principale */
+
+}
+
+#logo
+{
+    margin-top: 20px;                   /* ajout marge superieur */
+    margin-left: 93px;                  /* ajout marge gauche */
+    width: 81px;                        /* defini la hauteur */
+}
+
+h1
+{
+    font-weight: 700;                   /* mets en gras */
+    font-size: 29px;                    /* defini la taille de police */
+    margin-bottom: 15px;                /* ajout marge de dessous */
+    margin-top: 20px;                   /* ajout marge de dessus */
+    margin-left: 73px;                  /* ajout marge gauche */
+}
+
+#txt_header
+{
+    font-size: 21px;                    /* defini la taille du texte */
+    margin-left: 73px;                  /* ajout d'une marge interne gauche */    
+}
+
+/* Mise en forme du menu desktop*/
+
+nav
+{
+    width: 430px;                       /* defini largeur dans <header> */
+    height: 155px;                      /* defini la hauteur */
+    margin-right: 57px;                 /* ajout marge droite */
+}
+
+ul
+{
+    display: flex;                      /* defini l'axe principale en ligne les balise <li> */
+    font-size: 23px;                    /* defini la taille de police */
+}
+
+li
+{
+    width: 50%;                         /* defini la largeur dans <ul> */
+    height: 155px;                      /* defini la hauteur */
+}
+
+.lien_menu
+{
+    display: flex;                      /* defini l'axe principale en ligne des <a> */ 
+    height: 100%;                       /* defini la hauteur dans <a> */
+    justify-content: center;            /* centrage sur l'axe principal des <a> dans <li> */
+    align-items: center;                /* centrage sur l'axe secondaire des <a> dans <li> */
+    text-decoration: none;              /* suprr le souligne bleu d'origine */
+    color: black;                       /* texte en noir */
+    list-style-type: none;              /* suppr les puces */
+    border-top: solid 3px transparent;  /* bordure supérieur invisible */
+}
+
+.lien_menu:hover
+ {
+    border-top: solid 3px #0065FC;      /* ligne bleu au survol */
+    color: #0065FC;                     /* texte bleu au survol */
+ }
+
+/* Mise en forme du formulaire de recherche */
+
+#recherche
+{
+    margin-left: 73px;                  /* ajout d'une marge gauche */
+    margin-top: 24px;                   /* ajout d'une marge supérieur */
+    margin-bottom: 33px;                /* ajout d'une marge inferieur */
+}
+
+#ico_map
+{
+    position: relative;                 /* permet de positionner <i> */
+    top: 3px;                           /* descend <i> */
+    background-color: #F2F2F2 ;         /* fond gris */
+    border-radius: 20px 0px 0px 20px;   /* arrondi de <i> */
+    padding: 23.5px 25.5px;             /* ajout de marge interne pour definir la taille du bloc */
+    font-size: 23px;                    /* defini la taille de <i> */
+}
+
+#champ
+{
+    position: relative;                 /* permet de positionner */
+    right: 5px;                         /* deplace vers la gauche */
+    top: 3px;                           /* descend */
+    border-top: solid 2px #F2F2F2;      /* bordure supérieure grise */
+    border-bottom: solid 2px #F2F2F2;   /* bordure inférieure grise */
+    border-left: none;                  /* suppr la bordure gauche d'origine */
+    border-right: none;                 /* suppr la bordure droite d'origine */
+    height: 70px;                       /* defini la hauteur de <input> */
+    width: 312px;                       /* defini la largeur de <input> */
+    padding-left: 22px;                 /* ajout d'une marge interne */
+    font-size: 24px;                    /* defini la taille de la police */
+    font-weight: 700;                   /* mets en gras */
+}
+
+#bouton_desktop
+{
+    position: relative;                 /* permet de positioner <input> */
+    top: 2px;                           /* remonte <input> */
+    right: 9px;                         /* vers la gauche */
+    border: none;                       /* suppr la bordure d'origine */
+    background-color: #0065FC;          /* fond bleu */
+    color: white;                       /* texte en blanc */
+    padding: 21px 24px;                 /* ajout de marge interne pour definir la taille du bloc */
+    border-radius: 0px 20px 20px 0px;   /* defini l'arrondi des coins */
+    cursor: pointer;                    /* change le curseur au survol du bouton */
+    font-size: 24px;                    /* defini la taille de la police */
+    font-weight: 600;                   /* mets en gras */
+}
+
+#bouton_mobile
+{
+    display: none;                      /* cache le <button> */
+}
+
+/* Mise en forme des filtres */
+
+#bloc_filtres
+{
+    display: flex;                      /* defini l'axe principale en ligne de <p id="txt_filtre"> et des <a class="filtres"> */
+    align-items: center;                /* alignement vertical au centre */
+    flex-wrap: wrap;                    /* permet le retour à la ligne */
+    margin-left: 82px;                  /* ajout d'une marge gauche */
+}
+
+#titre_filtres
+{
+    font-size: 24px;                    /* defini la taille de la police */
+    font-weight: 700;                   /* mets en gras */
+    margin-right: 41px;                 /* ajoute une marge a droite */
+}
+
+.filtres
+{
+    display: flex;                      /* defini l'axe principale en ligne des <i> et <p class="txt_filtres */
+    align-items: center;                /* alignement vertical au centre */
+    border-top: solid 4px #F2F2F2;      /* bordure superieur grise */
+    border-bottom: solid 4px #F2F2F2;   /* bordure inferieur grise */
+    border-right: solid 4px #F2F2F2;    /* bordure droite grise */
+    border-radius: 60px 60px;           /* defini l'arrondi */
+    height: 59px;                       /* defini la hauteur de <a class"filtres"> */
+    color: black;                       /* texte en noir */
+    font-size: 24px;                    /* defini la taille de la police */
+    font-weight: 700;                   /* mets en gras */
+    margin-right: 31px;                 /* ajout d'un marge a droite */
+    margin-top: 10px;                   /* ajout d'une marge supérieure */
+}
+
+
+.ico_filtres
+{            
+    color: #0065FC;                     /* mets <i class="ico-filtre"> en bleu */
+    font-size: 25px;                    /* defini la taille de <i class="ico-filtre"> */
+    width: 25px;                        /* defini la largeur de <i class="ico-filtre"> */
+    background-color: #DEEBFF;          /* fond bleu clair */
+    padding: 21px 21px;                 /* ajout de marge interne pour definir la taille du bloc */
+    border-radius: 50%;                 /* angle arrondi */
+}
+
+.txt_filtres
+{
+    margin-left: 19px;                  /* ajout d'une marge a gauche */
+    margin-right: 28px;                 /* ajout d'une marge a droite */
+}
+
+.survol:hover
+{
+    transform: scale(1.1);              /* zoom en survol */
+    transition: transform .2s;          /* tempo de transition */
+    box-shadow: 2px 2px 3px black;      /* ajout d'effet d'ombre */
+    color: #0065FC;                     /* texte en bleu */
+}
+
+#info
+{
+    margin-top: 45px;                   /* ajout d'une marge supérieure */
+    margin-bottom: 47px;                /* ajout d'une marge inferieur */
+    margin-left: 73px;                  /* ajout d'une marge gauche */
+    display: flex;                      /* mets en ligne <i> et <p> */
+    align-items: center;                /* centrage verticale <i> et <p> */              
+
+}
+
+#txt_info
+{
+    font-size: 21px;                    /* taille de la police */
+    margin-left: 16px;                  /* ajout d'une marge gauche */
+}
+
+#ico_info
+{
+    text-align: center;                 /* centrage horizontal de <i> */
+    font-size: 17px;                    /* defini la taille de <i> */
+    width: 17px;                        /* defini la largeur de <i> */
+    color: #0065FC;                     /* <i> en bleu */
+    padding: 7px 7px;                   /* ajout de marge interne pour definir la taille du bloc */
+    border: solid 2px #F2F2F2;          /* bordure grise */
+    border-radius: 50%;                 /* arrondi cercle */
+}
+
+/* Mise en forme section herberments */
+
+section
+{
+    display: flex;                      /* defini l'axe principal en ligne de <div id="bloc_hebergements"> et <aside> */
+    justify-content: space-between;     /* defini l'espace entre les blocs */
+    width: 93%;                         /* defini la largeur du conteneur */
+    height: 33%;                        /* defini la hauteur du conteneur */
+    margin: auto;                       /* centre <section> dans <body> */
+}
+
+#bloc_hebergements
+{
+    background-color: #F2F2F2;          /* fond gris */
+    border-radius: 20px;                /* arrondi les angles */
+    width: 65%;                         /* defini la largeur  dans <section> */
+}
+
+
+.sous_bloc_hebergement
+{
+   width: 91%;                          /* defini la largeur dans <div id="bloc_hebergements" */ 
+   display: flex;                       /* defini l'axe principale en ligne de <h3>, <div class="bloc_cartes"> et <a id="afficher_plus"> */
+   flex-direction: column;              /* defini l'axe principale en colonne */
+   margin: auto;                        /* centre dans le parent */
+}
+
+h3
+{
+    font-size: 29px;                    /* taille de la police */
+    font-weight: 800;                   /* mets en gras */
+    margin-top: 63px;                   /* ajout d'une marge supérieure */
+    margin-bottom: 33px;                /* ajout d'une marge inférieure */
+}
+
+.bloc_cartes
+{
+    display: flex;                      /* defini l'axe principal en ligne des <a class="cartes survol"> */
+    flex-wrap: wrap;                    /* autorise le retour a la ligne */
+    justify-content: space-between;     /* espace entre les enfants sur l'axe principal */
+    row-gap: 40px;                      /* espace entre les .cartes */
+}
+
+.cartes
+{
+    background-color: white;            /* fond blanc */
+    border-radius: 20px;                /* angle arrondi */
+    box-shadow: 1px 1px 20px -12px black;   /* effet d'ombre */
+    padding: 7px;                       /* ajout de marges internes */
+    width: 30.1%;                       /* defini la largeur dans .bloc_cartes */
+}
+
+.fig_hebergements
+{
+    display: flex;                      /* defini l'axe principal en ligne pour <figure class="img_hebergements et <figcaption>" */
+    flex-direction: column;             /* defini l'axe principal en colonne */
+}
+
+.img_hebergements
+{
+
+    height: 152px;                      /* defini la hauteur */
+    border-radius: 20px 20px 0px 0px;   /* arrondi les angles */
+    object-fit: cover;                  /* <img> garde son ratio */
+}
+
+figcaption
+{
+    padding: 3%;                        /* defini les marges internes */
+    display: flex;                      /* defini l'axe principale en ligne pour <h4>, .txt_tarif et .bloc_etoiles */
+    flex-direction: column;             /* defini la'awe principale en colonne */
+}
+
+h4
+{
+    font-size: 21px;                    /* taille de la police */
+    font-weight: 700;                   /* mets en gras */
+    margin: 2%;                         /* defini les marges */
+}
+
+.txt_tarif
+{
+    font-size: 18px;                    /* taille de la police */
+    margin: 2%;                         /* defini les marges */
+}
+
+.gras
+{
+    font-weight: 700;                   /* mets en gras les prix */
+}
+
+.bloc_etoiles
+{
+    display: flex;                      /* rapproche les etoiles... */
+    margin: 2%;                         /* defini les marges */
+}
+
+.etoile_bleu
+{
+    color: #0065FC;                     /* icone en bleu */
+}
+
+.etoile_grise
+{
+    color: #d9d9d9;                     /* icone en gris */
+}
+
+#afficher_plus
+{
+    font-size: 24px;                    /* taille de la police */
+    font-weight: 700;                   /* mets en gras */
+    margin-top: 56px;                   /* ajout d'une marge supérieure */
+    margin-bottom: 61px;                /* ajout d'une marge inférieure */
+}
+
+/* Mise en forme aside */
+
+aside
+{
+    background-color: #F2F2F2;          /* fond gris */
+    border-radius: 20px;                /* arrondi les angles */
+    width: 31%;                         /* defini la largeur dans <section> */
+}
+
+.sous_bloc_hebergement_populaires
+{
+    width: 83%;                         /* defini la largeur du conteneur */
+}
+
+#titre_populaires
+{
+    display: flex;                      /* defini l'axe principal en ligne pour <h3> et <i class="ico_chart"> */
+    justify-content: space-between;     /* espace entre les enfants sur l'axe principal */
+}
+
+.ico_chart
+{
+    font-size: 24px;                    /* taille de <i> */
+    margin-top: 63px;                   /* ajout d'une marge supérieure */
+}
+
+.cartes_populaires
+{
+    width: 100%;                        /* defini la largeur dans le conteneur */
+}
+
+.fig_populaires
+{
+    flex-direction: row;                /* defini l'axe principal en ligne */
+}
+
+
+.img_populaires
+{
+    width: 39%;                         /* defini la largeur */
+    min-width: 39%;                     /* defini la largeur minimale */
+    height: 179px;                      /* defini la hauteur */
+    border-radius: 20px 0px 0px 20px;   /* arrondi les angles */
+}
+
+.h4_populaires
+{
+    padding-left: 7px;                  /* ajout d'une marge interne gauche */
+}
+
+.txt_populaires
+{
+    padding-left: 7px;                  /* ajout d'une marge interne gauche */
+    margin-top: 15px;                   /* ajout d'une marge superieur */
+}
+
+
+.etoiles_populaires
+{
+    align-items: flex-end;              /* dispose a la fin du conteneur */
+    flex: 1;                            /* etend l'item dans le conteneur */
+    padding-left: 7px;                  /* ajout d'une marge interne gauche */
+}
+
+/* Mise en forme section Activités */
+
+#Activités
+{
+    display: flex;                      /* defini l'axe principale en ligne pour <h3> et #bloc_cartes_activités */
+    flex-direction: column;             /* defini l'axe principale en colonne */
+    padding-top: 22px;                  /* ajout d'une marge interne supérieure */
+}
+
+#bloc_cartes_activités
+{
+    display: flex;                      /* defini l'axe principale en ligne pour .cartes_activités */
+    justify-content: space-between;     /* espace entre les .cartes_activités */
+}
+
+.cartes_activités_1, .cartes_activités_2, .cartes_activités_3, .cartes_activités_4, .cartes_activités_5, .cartes_activités_6
+{
+    padding: 0px;                       /* suppr le padding de .cartes */
+    width: 22%;                         /* reduit la largeur */
+}
+
+.img_activités_1, .img_activités_2, .img_activités_3, .img_activités_4, .img_activités_5, .img_activités_6
+{
+    width: 100%;                        /* defini la largeur dans <figure> */
+    object-fit: cover;                  /* <img> garde son ratio */
+    border-radius: 20px 20px 0px 0px;   /* arrondi les coins */
+}
+
+.colonne_activités
+{
+    display: flex;                      /* defini l'axe principale en ligne pour .cartes */
+    flex-direction: column;             /* defini l'axe principale en colonne */
+    justify-content: space-between;     /* espace entre les cartes sur l'axe principale */
+    width: 22%;                         /* defini la largeur */
+}
+
+.cartes_activités_2, .cartes_activités_3
+{
+    width: 100%;                        /* defini la largeur dans .colonne_activités */
+}
+
+.cartes_activités_5, .cartes_activités_6
+{
+    width: 100%;                        /* defini la largeur dans .colonne_activités */
+}
+
+.fig_activités
+{
+    display: flex;                      /* defini l'axe principale en ligne pour <figure> */
+    flex-direction: column;             /* defini l'axe principale en colonne */   
+}
+
+.figcaption_activités
+{
+    padding: 0px;                       /* suppr les marges internes de <figcaption> */
+    height: 76px;                       /* defini la hauteur */
+    justify-content: center;            /* centrage vertical de h4_activités dans figcaption_activités */
+}
+
+.h4_activités
+{
+    margin-left: 26px;                  /* ajout d'une marge gauche */
+}
+
+.img_activités_1, .img_activités_4
+{
+    height: 519px;                      /* defini la hauteur */
+}
+
+.img_activités_2
+{
+    height: 241px;                      /* defini la hauteur */
+}
+
+.img_activités_3
+{
+    height: 146px;                      /* defini la hauteur */
+}
+
+.img_activités_5
+{
+    height: 187px;                      /* defini la hauteur */
+}
+
+.img_activités_6
+{
+    height: 204px;                      /* defini la hauteur */
+}
+
+/* Mise en forme du Footer */
+
+footer
+{
+    background-color: #F2F2F2;          /* fond gris */
+    padding-top: 65px;                  /* ajout d'une marge interne superieure */
+    padding-bottom: 51px;               /* ajout d'une marge interne inférieure */
+    margin-top: 79px;                   /* ajout 'une marge superieure */
+}
+
+.bloc_footer
+{
+    display: flex;                      /* defini l'axe principale en ligne pour les <div class="footer_" */
+    width: 70%;                         /* defini la largeur du conteneur */
+    justify-content: space-between;     /* espace entre les <div> sur l'axe principale*/
+    margin-left: 66px;                  /* ajout d'une marge gauche */
+}
+
+.h5_footer
+{
+    font-size: 23px;                    /* defini la taille de la police */
+    font-weight: 700;                   /* mets en gras */
+    margin-bottom: 30px;                /* ajout d'une marge inferieure */
+}
+
+.txt_footer
+{
+    font-size: 22px;                    /* defini la taille de la police */
+    margin-bottom: 20px;                /* ajout d'une marge inférieure */
+}

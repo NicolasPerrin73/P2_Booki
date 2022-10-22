@@ -1,0 +1,333 @@
+/* Style pour affichage mobile jusqu'à 768px */
+
+/* Mise en forme header */
+
+header
+{
+	flex-direction: column; 			/*defini l'axe principale en colonne pour <figure> et <nav> */
+}
+
+#logo
+{
+	margin: 29px auto 37px;				/* modifie les marges */
+	width: 60px;						/* reduit la largeur de <img> */
+}
+
+nav
+{
+	width: 100%;						/* etend le menu sur toute la largeur */
+	height: auto;						/* suppr la hauteur defini en desktop */
+}
+
+ul
+{
+	font-size: 16px;					/* reduit la taille de police */
+}
+
+li
+{
+	height: auto;						/* suppr heigh: 100px de tablette.css */
+	border-top: none;					/* enleve la ligne grise en dessus */
+	border-bottom: solid 3px #F2F2F2;	/* ligne grise en dessous */
+	padding-bottom: 16px;				/* ajout d'une marge interne basse */
+}
+
+.lien_menu:hover
+{
+	border-top: none;					/* enleve la ligne bleu en dessus en survol */
+	border-bottom: solid 3px #0065FC;	/* ligne bleu en dessous en survol */
+	padding-bottom: 16px;
+}
+
+
+/* Mise en forme titre et texte */
+
+h1
+{
+	font-size: 23px;					/* reduit la taille du texte */
+	margin-top: 35px;					/* augmente la marge superieur */
+	margin-left: 21px;					/* reduit la marge gauche */	
+}
+
+#txt_header
+{
+	font-size: 16px;					/* reduit la taille du texte */
+	margin-left: 21px;					/* reduit la marge gauche */
+}
+
+/* Mise en forme du champ de recherche mobile */
+
+#bouton_desktop
+{
+	display: none;						/* cache le bouton rechercher desktop */
+}
+
+#recherche
+{
+	margin-left: 21px;					/* reduit la marge a gauche */
+	margin-top: 35px;					/* augmente la marge superieure */
+	margin-bottom: 37px;				/* augmente la marge inferieure */
+}
+
+form
+{
+	display: flex;						/* defini l'axe principale en ligne pour <i>, <input> et <button> */
+}
+
+#ico_map
+{
+	border-radius: 13px 0px 0px 13px;	/* reduit les coins arrondis */
+	padding: 17px 20.5px;				/* reduit les marges internes */	
+	font-size: 17px;					/* reduit la taille de <i> */
+	
+}
+
+#champ
+{
+	height: 51px;						/* reduit la hauteur */
+	width: 68%;							/* reduit la largeur */
+	max-width: 240px;					/* defini la largeur maximum */
+	font-size: 16px;					/* reduit la taille de la police */
+}
+
+#bouton_mobile
+{
+	display: inline-block;				/* affiche <input> pour mobile */
+	position: relative;             	/*permet de positionner <i> */
+    top: 4px;							/* annule descend <i> de desktop */
+    right: 15px;						/* deplace vers la gauche */
+    border: none;                   	/* suppr la bordure d'origine */
+    background-color: #0065FC;      	/* fond bleu */
+    color: white;						/* couleur de <i>*/
+    padding: 15px 14px;             	/*ajout de marge interne pour definir la taille du bloc */
+    border-radius: 13px 13px;	    	/* arrondi de <i> */
+    font-size: 18px;					/* taille de <i> */    
+}
+
+/* Mise en forme des filtres mobile */
+
+#bloc_filtres
+{
+	margin-left: 21px;					/* reduit la marge gauche */
+
+}
+
+#titre_filtres
+{
+	font-size: 16px;					/* reduit la taille de police */
+	width: 100%;						/* etend la taille du bloc */
+	margin-bottom: 7px;					/* ajout la marge inferieur */
+
+}
+
+.filtres
+{
+	height: 42px;						/* reduit la taille de <a> */
+	font-size: 16px;					/* reduit la taille de police */
+	margin-right: 12px;					/* reduit la marge droite */
+	margin-top: 12px;					/* augmente la marge supérieure */
+}
+
+.ico_filtres
+{
+	font-size: 16px;					/* reduit la taille de <i> */
+	width: 16px;						/* defini la hauteur de <i> */
+	padding: 17px 17px;					/* reduit la taille du bloc <i> */
+}
+
+.txt_filtres
+{
+	margin-left: 12px;					/* reduit la marge gauche */
+	margin-right: 12px;					/* reduit la marge droite */
+}
+
+#info
+{
+	margin-top: 37px;					/* reduit la marge superieure */
+	margin-bottom: 34px;				/* reduit la marge inférieure */	
+	margin-left: 21px;					/* reduit la marge gauche */
+}
+
+#ico_info
+{
+	position: relative;					/* permet de positioner <i> */
+    bottom: 10px;						/* remonte <i> */
+	font-size: 12px;					/* reduit la taille de <i> */
+	width: 15px;						/* reduit la largeur de <i> */
+	padding: 4px 4px;					/* reduit les marges internes */
+}
+
+#txt_info
+{
+	font-size: 16px;					/* reduit la taille de la police */
+	margin-left: 11px;					/* reduit la marge gauche */
+}
+
+/* Mise en forme Hebergements a Marseille */
+
+
+.sous_bloc_hebergement
+{
+	width: 89%;							/* reduit la largeur */
+	padding-bottom: 37px;				/* aujout d'une marge inférieur */
+}
+
+h3
+{
+	font-size: 21px;					/* reduit la taille de police */
+}
+
+.h3_hebergements
+{
+	margin-top: 41px;					/* reduit la marge superieure */
+	margin-bottom: 19px;				/* reduit la marge inférieure */
+}
+
+.bloc_cartes
+{
+	row-gap: 11px;						/* diminue l'espace entre les .cartes */
+}
+
+.cartes
+{
+	padding: 5px;						/* reduit les marges internes */
+	width: 100%;						/* augmente la taille dans .bloc_cartes */
+}
+
+.img_hebergements
+{
+	height: 114px;						/* reduit la hauteur */
+}
+
+.figcaption_hebergements
+{
+	padding: 1%;						/* reduit les marges internes */
+}
+
+h4
+{
+	font-size: 16px;					/* reduit la taille de la police */
+}
+
+.h4_hebergements
+{
+	margin: 2% 2% 1% 2%;				/* diminue la margin inférieure */
+}
+
+.txt_tarif
+{
+	font-size: 14px;					/* reduit la taille de la police */
+}
+
+.bloc_etoiles
+{
+	margin: 1%;							/* reduit les marges */
+}
+
+.etoile_bleu, .etoile_grise
+{
+	font-size: 12px;					/* reduit la taille de <i> */
+}
+
+#afficher_plus
+{
+	font-size: 17px;					/* reduit la taille de la police */
+	margin-top: 27px;					/* reduit la marge supérieure */
+	margin-bottom: 20px;				/* reduit la marge inférieure */
+}
+
+/* Mise en forme aside les plus populaires */
+
+.h3_populaires
+{
+	margin-top: 39px;					/* reduit la marge supérieure */
+	margin-bottom: 28px;				/* reduit la marge inférieure */
+}
+
+.ico_chart
+{
+	font-size: 21px;					/* reduit la taille de <i> */
+	margin-top: 43px;					/* reduit la marge supérieur */
+}
+
+.fig_populaires
+{
+	flex-direction: row;				/* defini l'axe principale en ligne */
+}
+
+.txt_populaires
+{
+	margin-top: 10px;					/* ajout d'une marge supérieure */
+}
+
+.img_populaires
+{
+	width: 39%;							/* reduit la largeur */
+	height: 134px;						/* reduit la hauteur */
+	border-radius: 20px 0px 0px 20px;	/* deplace les arrondis des coins */
+}
+
+/* Mise en forme de la section Activités */
+
+#Activités
+{
+	padding-top: 0px;					/* suppr la marge internes supérieure */
+}
+
+.h3_activités
+{
+	margin-top: 0px;					/* suppr la marge supérieure */
+}
+
+#bloc_cartes_activités
+{
+	gap: 24px;							/* augmente l'espace entre les .cartes_activités */
+}
+
+.cartes_activités_1, .cartes_activités_2, .cartes_activités_3, .cartes_activités_4, .cartes_activités_5, .cartes_activités_6
+{
+	padding: 0px;						/* suppr les marges internes */
+}
+
+.colonne_activités
+{
+	flex-direction: column;				/* defini l'axe principale en colonne */
+}
+
+.img_activités_1, .img_activités_2, .img_activités_3, .img_activités_4, .img_activités_5, .img_activités_6
+{
+	height: 134px;						/* reduit la hauteur */
+}
+
+.figcaption_activités
+{
+	height: 55px;						/* reduit la hauteur */
+}
+
+/* Mise en forme du Footer */
+
+footer
+{
+	padding-top: 20px;					/* reduit la marge interne supérieure */
+	padding-bottom: 48px;				/* reduit la marge interne inférieure */
+	margin-top: 48px;					/* reduit la marge supérieure */
+}
+
+.bloc_footer
+{
+	flex-direction: column;				/* defini l'axe principale en colonne */
+	width: 85%;							/* reduit la largeur */
+}
+
+.h5_footer								
+{
+	font-size: 17px;					/* reduit la taille de la police */
+	margin-bottom: 23px;				/* reduit la marge inférieure */
+	margin-top: 30px;					/* ajout d'une marge supérieure */
+}
+
+.txt_footer
+{
+	font-size: 16px;					/* reduit la taille de la police */
+	margin-bottom: 15px;				/* reduit la marge inférieure */
+}	

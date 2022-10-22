@@ -1,0 +1,121 @@
+/* Style pour affichage tablette de 768px à 992px */
+
+
+#logo
+{
+    margin-left: 39px;                  /* reduit la marge gauche */
+}
+
+nav
+{
+    margin-right: 0px;                  /* suppr la marge droite */
+}
+
+li
+{
+    height: 100px;                      /* reduit la hauteur */
+}
+
+h1
+{
+    margin-left: 39px;                  /* reduit la marge gauche */                  
+}
+
+#txt_header
+{
+    margin-left: 39px;                  /* reduit la marge gauche */
+}
+
+#recherche
+{
+    margin-left: 39px;                  /* reduit la marge gauche */
+}
+
+#bloc_filtres
+{
+    margin-top: 39px;                   /* augmente la marge superieure */
+    margin-left: 39px;                  /* augmente la marge gauche */
+}
+
+section
+{
+    flex-direction: column-reverse;    /*mets l'axe principale en colonne inverse */
+    gap: 0px;                          /* suppr l'espacement entre #bloc_hebergement et <aside> */ 
+    width: 100%;                       /* augmente la largeur dans <body> */
+}
+
+#bloc_hebergements
+{
+    width: 100%;                        /* augmente la largeur dans <body> */
+    background-color: transparent;      /* suppr le fond gris */
+}
+aside
+{
+    width: 100%;                        /* augmente la largeur dans <body> */
+    border-radius: 0px;                 /* suppr les coins arrondi */
+}
+
+.sous_bloc_hebergement_populaires
+{
+    width: 91%;                         /* augmente la largeur dans #bloc_hebergements */ 
+    padding-bottom: 30px;               /* ajout d'une marge interne inférieur */
+}
+
+.cartes_populaires
+{
+    width: 30%;                         /* diminue la largeur dans #sous_bloc_hebergements_populaires */
+}
+
+.fig_populaires
+{
+    flex-direction: column;             /* mets l'axe principale en colonne */
+}
+
+.img_populaires
+{
+    width: 100%;                        /* defini la largeur dans .fig_hebergements */
+    height: 152px;                      /* defini la hauteur */
+    border-radius: 20px 20px 0px 0px;   /* arrondi les angles */
+}
+
+#Activités
+{
+    width: 91%;                         /* reduit la largeur */
+}
+
+#bloc_cartes_activités
+{
+    flex-wrap: wrap;                    /* autorise le retour a la ligne */
+    gap:  20px;                         /* defini l'espace entre les .cartes_activités */
+}
+
+.cartes_activités_1, .cartes_activités_4
+
+{
+    width: 30%;                         /* defini la largeur dans #bloc_cartes_activités */
+}
+
+.cartes_activités_2, .cartes_activités_3, .cartes_activités_5, .cartes_activités_6
+{
+    width: 100%;                        /* defini la largeur dans .colonne_activités */
+}
+
+.colonne_activités
+{
+    flex: 60%;                          /* augmente la largeur dans #bloc_cartes_activités */
+    flex-direction: row;                /* defini l'axe principale en ligne */
+    gap:  20px;                         /* defini l'espace sur l'axe principale entre les .cartes_activités */
+}
+
+
+.img_activités_1, .img_activités_2, .img_activités_3, .img_activités_4, .img_activités_5, .img_activités_6
+{
+    height: 152px;                      /* defini la hauteur */
+}
+
+
+.bloc_footer
+{
+    width: 91%;                         /* defini la largeur */
+    margin: auto;                       /* centre dans <footer> */
+}
